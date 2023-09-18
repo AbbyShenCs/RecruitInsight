@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>职位数据分析系统</title>
+    <link rel="stylesheet" href="/assets/layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="/assets/css/login.css" media="all"/>
+    <script src="/assets/js/jquery.min.js"></script>
+    <style>
+        .layui-input {
+            background-color: inherit;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="layui-row">
+    <div class="layui-col-sm12 layui-col-md12">
+        <div class="layui-carousel zyl_login_height" id="zyllogin" lay-filter="zyllogin">
+            <div carousel-item="">
+                <div>
+                    <div class="zyl_login_cont"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zyl_lofo_main">
+    <fieldset class="layui-elem-field layui-field-title zyl_mar_02">
+        <legend>欢迎登陆 - 职位数据分析系统</legend>
+    </fieldset>
+    <div class="layui-row layui-col-space15">
+        <form class="layui-form zyl_pad_01" action="">
+            <div class="layui-col-sm12 layui-col-md12">
+                <div class="layui-form-item">
+                    <input type="text" id="userName" lay-verify="required|userName" autocomplete="off" placeholder="账号" class="layui-input">
+                    <i class="layui-icon layui-icon-username zyl_lofo_icon"></i>
+                </div>
+            </div>
+            <div class="layui-col-sm12 layui-col-md12">
+                <div class="layui-form-item">
+                    <input type="password" id="password" lay-verify="required|pass" autocomplete="off" placeholder="密码" class="layui-input">
+                    <i class="layui-icon layui-icon-password zyl_lofo_icon"></i>
+                </div>
+            </div>
+
+            <div class="layui-col-sm12 layui-col-md12">
+                <div class="layui-row">
+                    <div class="layui-col-xs4 layui-col-sm4 layui-col-md4">
+                        <div class="layui-form-item">
+                            <input type="text" name="vercode" id="vercode" lay-verify="required|vercodes" autocomplete="off" placeholder="验证码" class="layui-input" maxlength="4">
+                            <i class="layui-icon layui-icon-vercode zyl_lofo_icon"></i>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs4 layui-col-sm4 layui-col-md4">
+                        <div class="zyl_lofo_vercode zylVerCode" onclick="zylVerCode()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm12 layui-col-md12" style="margin-top: 30px">
+                <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="demo1">立即登录</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/layui/layui.js"></script>
+<script type="text/javascript" src="/assets/assembly/jqarticle/jparticle.min.js"></script>
+<script type="text/javascript" src="/assets/assembly/zylVerificationCode/zylVerificationCode.js"></script>
+<script>
+    function doLogin() {
+        var v_userName = $("#userName").val();
+        var v_pwd = $("#password").val();
+        var v_user = new Object();
+        v_user.username = v_userName;
+        v_user.password = v_pwd;
+        var str = JSON.stringify(v_user);
+        var param = JSON.parse(str);
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "/user/adminlogin",
+            data: param,
+            success: function (result) {
+                if (result.code == "0") {
+                    location.href = "/admin/index.html";
+                } else {
+                    layer.msg(result.msg, {
+                        icon: 5
+                    });
+                }
+            },
+            error: function () {
+                layer.msg('服务器错误', {
+                    icon: 5
+                });
+            }
+        });
+    }
+
+    layui.use(['carousel', 'form'], function () {
+        var carousel = layui.carousel, form = layui.form;
+        form.verify({
+            userName: function (value) {
+                if (value.length < 3) {
+                    return '账号至少得3个字符';
+                }
+            }
+            , pass: [/^[\S]{1,12}$/, '密码必须1到12位，且不能出现空格']
+            , vercodes: function (value) {
+                //获取验证码
+                var zylVerCode = $(".zylVerCode").html();
+                if (value != zylVerCode) {
+                    return '验证码错误（区分大小写）';
+                }
+            }
+            , content: function (value) {
+                layedit.sync(editIndex);
+            }
+        });
+
+        //监听提交
+        form.on('submit(demo1)', function (data) {
+            doLogin();
+            return false;
+        });
+
+        //设置轮播主体高度
+        var zyl_login_height = $(window).height();
+        var zyl_car_height = $(".zyl_login_height").css("cssText", "height:" + zyl_login_height + "px!important");
+
+        //Login轮播主体
+        carousel.render({
+            elem: '#zyllogin'
+            , width: '100%'
+            , height: 'zyl_car_height'
+            , arrow: 'always'
+            , anim: 'fade'
+            , autoplay: true
+            , arrow: 'hover'
+            , indicator: 'none'
+            , interval: '5000'
+        });
+
+        //粒子线条
+        $(".zyl_login_cont").jParticle({
+            background: "rgba(0,0,0,0)",
+            color: "#fff",
+            particlesNumber: 100,
+            particle: {
+                minSize: 1,
+                maxSize: 3,
+                speed: 30,
+            }
+        });
+
+    });
+
+</script>
+</body>
+</html>

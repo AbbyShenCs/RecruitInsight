@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e934ca23-e341-493f-b8f0-43a734d68d0a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\dev_soft\maven_repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../dev_soft/maven" />
+        <option name="userSettingsFile" value="D:\dev_soft\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pvriLavEm6HYRrMyA2KzYOS8zy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\App\App_Idea\App_Idea_Project\other\java_job_show\src\main\resources\public\admin" />
+      <recent name="D:\App\App_Idea\App_Idea_Project\other\java_job_show\src\main\java\com\job\controller" />
+      <recent name="D:\App\App_Idea\App_Idea_Project\other\java_job_show\src\main\java\com\job\interceptor" />
+      <recent name="D:\App\App_Idea\App_Idea_Project\other\java_job_show\src\main\java\com\job\service\impl" />
+      <recent name="D:\App\App_Idea\App_Idea_Project\other\java_job_show\src\main\java\com\job\service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="StartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="java_job_show" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.job.boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.job.boot.StartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.StartApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e934ca23-e341-493f-b8f0-43a734d68d0a" name="Default Changelist" comment="" />
+      <created>1616074530641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616074530641</updated>
+      <workItem from="1616074531793" duration="8176000" />
+      <workItem from="1616120381183" duration="683000" />
+      <workItem from="1616133560157" duration="220000" />
+      <workItem from="1616134778224" duration="375000" />
+      <workItem from="1616144177543" duration="15000" />
+      <workItem from="1616158780187" duration="1552000" />
+      <workItem from="1616160405648" duration="694000" />
+      <workItem from="1616161169914" duration="2000" />
+      <workItem from="1616203303974" duration="662000" />
+      <workItem from="1616465172489" duration="67000" />
+      <workItem from="1616593294461" duration="386000" />
+      <workItem from="1637946100736" duration="1657000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

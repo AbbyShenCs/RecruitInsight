@@ -1,0 +1,352 @@
+/*
+Theme Name: Flapartment - Real Estate HTML5 Template.
+Author: Slidesigma
+Author URL: https://themeforest.net/user/slidesigma
+Version: 1.0.0
+*/
+@media (max-width: 1500px) {}
+@media (max-width: 1200px) {
+	/*navigation*/
+	.main-menu>li.menu-item>a{
+		padding: 18px 15px;
+	}
+	/*listing details*/
+	.property-basic-info .property-basic-info-wrapper .property-price{
+		font-size: 22px;
+	}
+	.property-basic-info .property-basic-info-wrapper .property-details .property-icon{
+		width: 30px;
+	}
+	.property-basic-info .property-basic-info-wrapper .property-details .property-content{
+		width: calc(100% - 0px);
+	}
+	.property-basic-info .property-basic-info-wrapper .property-details .property-content .property-value{
+		font-size: 12px;
+	}
+	.mb-lg-20 {
+		margin-bottom: 20px;
+	}
+	.mb-lg-40 {
+		margin-bottom: 40px;
+	}
+	.mb-lg-80 {
+		margin-bottom: 80px;
+	}
+}
+@media (max-width: 992px) {
+	/*general*/
+	.section-header-right{
+		text-align: left;
+	}
+	.section-header-right .section-heading{
+		padding-right: 0;
+		padding-left: 25px;
+	}
+	.section-header-right .section-heading:after{
+		right: auto;
+		left: 0;
+	}
+	/*topbar*/
+	.topbar .left-side li{
+		margin-right: 10px;
+	}
+	.menu-style .header .logo{
+		margin: 9px 0;
+	}
+	/*navigation*/
+	
+	.main-menu>li.menu-item,
+	.menu-item-has-children>.sub-menu>li.menu-item{
+		padding: 0;
+	}
+	.menu-style .header .right-side .navigation .logo,
+	.menu-style .header .right-side .navigation .social-media,
+	.main-menu{
+		display: block;
+	}
+	.menu-style .header .right-side .navigation{
+		position: fixed;
+	    left: -320px;
+	    background: #ffff;
+	    width: 320px;
+	    top: 0;
+	    height: 100vh;
+	    transition: 0.5s all;
+	    overflow: auto;
+	        z-index: 100;
+	}
+	.menu-style .header .right-side .navigation .logo{
+		margin: 10px auto;
+	}
+	.menu-style .header .right-side .navigation.active .social-media,
+	.menu-style .header .right-side .navigation.active{
+		left: 0;
+	}
+	.menu-style .header .right-side .hamburger-menu{
+		display: flex;
+		margin-right: 20px;
+	}
+	.menu-style .header .right-side .navigation .main-menu>li.menu-item>a{
+		display: flex;
+		justify-content: space-between;
+	}
+	.main-menu>li.menu-item>a:after{
+		bottom: 0;
+	}
+	.main-menu>li.menu-item:hover>a:after, .main-menu>li.menu-item.active>a:after{
+		display: none;
+	}
+	.menu-item-has-megamenu:hover>a:after, .menu-item-has-children:hover>a:after {
+	    transform: rotate(0deg);
+	}
+	.menu-item-has-megamenu.open a>arrow:after,
+	.menu-item-has-children.open a>arrow:after{
+		transform: rotate(180deg);
+	}
+	.menu-item-has-children.nav-postion:hover>.sub-menu {
+	    top: 0;
+	    transform: translateY(0%);
+	}
+	.menu-item-has-megamenu>.megamenu,
+	.menu-item-has-children>.sub-menu{
+		width: 100%;
+		position: relative;
+		opacity: 1;
+		transform: translateY(0px);
+	    visibility: visible;
+	    display: none;
+	    border-bottom: none;
+	}
+	.menu-item-has-megamenu.open .megamenu,
+	.menu-item-has-children.open .sub-menu{
+		border-bottom: solid 2px #376bff;
+	}
+	.main-menu li.menu-item-has-children.open>a{
+	    color: #376bff;
+	}
+	.menu-item-has-children .sub-menu li.menu-item-has-children>.sub-menu {
+	    left: 0;
+	    top: 0;
+	    margin-bottom: 10px;
+	}
+	/*banner*/
+	.banner-style-2{
+		height: 1000px;
+	}
+	.property-basic-info .property-basic-info-wrapper{
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.property-basic-info .property-basic-info-wrapper .property-cta,
+	.property-basic-info .property-basic-info-wrapper .property-price{
+		width: 100%;
+	}
+	.property-basic-info .property-basic-info-wrapper .property-details{
+		width: 50%;
+		border-left: 0;
+		padding-left: 0;
+	}
+	/*footer*/
+	.copyright .payment-logo{
+		justify-content: center;
+	}
+	.copyright p{
+		text-align: center;
+	}
+	.mb-md-20 {
+		margin-bottom: 20px;
+	}
+	.mb-md-40 {
+		margin-bottom: 40px;
+	}
+	.mb-md-80 {
+		margin-bottom: 80px;
+	}
+}
+@media (max-width: 767px) {
+	/*general*/
+	.slider-btn{
+		display: none;
+	}
+	.swiper-pagination{
+		display: block;
+	}
+	.menu-style .header .right-side .hamburger-menu{
+		margin-right: 0;
+	}
+	.menu-style .header .right-side .cta-btn{
+		display: none;
+	}
+	/*topbar*/
+	.topbar .left-side ul,
+	.topbar .right-side ul{
+		justify-content: center;
+	}
+	.topbar .left-side li,
+	.topbar .right-side li{
+		margin: 0 10px;
+	}
+	.menu-style.fixed-header{
+		top: 72px;
+	}
+	/*blog details*/
+	.blog-details .social-media-box>ul,
+	.blog-details .post-details-tags-social .tags-box{
+		justify-content: center;
+	}
+	/*listing list style*/
+	.property-list-view .property-list-wrapper{
+		display: block;
+	}
+	.property-list-view .property-list-wrapper.full-width-layout .property-list-img,
+	.property-list-view .property-list-wrapper.full-width-layout .property-list-content,
+	.property-list-view .property-list-wrapper .property-list-content,
+	.property-list-view .property-list-wrapper .property-list-img {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.property-list-view .property-list-wrapper .property-list-img{
+		height: 350px;
+	}
+
+	.mb-sm-20 {
+		margin-bottom: 20px;
+	}
+	.mb-sm-40 {
+		margin-bottom: 40px;
+	}
+	.mb-sm-80 {
+		margin-bottom: 80px;
+	}
+}
+@media (max-width: 576px) {
+	.banner-style-2{
+		height: 1200px;
+	}
+	.map-search-box{
+		width: 250px;
+		left: -250px;
+	}
+	/*navigation*/
+	
+	.banner-style-2 .banner-counter{
+		display: none;
+	}
+	.menu-style .header .right-side .navigation .social-media,
+	.menu-style .header .right-side .navigation{
+		left: -260px;
+		width: 260px;
+	}
+	/*about*/
+	.about-left-side .about-list ul{
+		columns: 1;
+	}
+	.about-left-side{
+		padding-right: 0;
+	}
+	.about-right-side img {
+	    padding: 20px;
+	    padding-left: 0;
+	}
+	.about-right-side:before{
+		left: 20px;
+	}
+	/*testimonial*/
+	.testimonial-box .testimonials-inner .testimonials-item{
+		margin-bottom: 40px;
+	}
+	.testimonial-box .testimonials-inner .testimonials-item{
+		display: block;
+	}
+	.testimonial-box .testimonials-inner .testimonials-item .testimonials-img{
+		max-width: 200px;
+    	margin: 0 auto 20px;
+	}
+	.testimonial-box .testimonials-inner .testimonials-item .testimonials-content{
+		margin-left: 0px;
+		padding-left: 10px;
+	}
+	.testimonial-box .testimonials-inner .testimonials-item cite{
+		position: relative;
+		top: -10px;
+	}
+	/*blog details*/
+	.blog-details .post .post-wrapper .post-meta .post-author .author-img{
+		display: block;
+	}
+	.blog-details .post-author .author-img{
+		display: none;
+	}
+	.blog-details .post-author .author-caption{
+	    flex: 0 0 calc(100% - 0px);
+	    max-width: calc(100% - 0px); 
+	}
+	.comment-box .children{
+		padding-left: 0;
+	}
+	blockquote {
+	    padding: 10px;
+	}
+	.comment-box .comments li article .comment-content .comment-meta .comment-meta-reply {
+	    display: flex;
+	    margin-top: 15px;
+	}
+	/*coming soon*/
+	.coming-soon .content-wrapper .newsletter-form .input-group{
+		display: block;
+	}
+	.coming-soon .content-wrapper .newsletter-form .input-group-append{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	/*listing*/
+	.listing-top-heading{
+		display: block;
+		text-align: center;
+	}
+	/*listing detail*/
+	.listing-detail .image-sec-table .images-wrapper .detail-page-slider-for .slide-item{
+		height: 300px;
+	}
+	.listing-detail .description-box .content-box .listing-infor{
+		columns: 2;
+	}
+	.listing-detail .property-details-box .price-box .ratings{
+		display: none;
+	}
+	.listing-detail .description-box .content-box .contact-form .form-footer{
+		display: block;
+	}
+	.property-basic-info .property-basic-info-wrapper .property-details{
+		width: 100%;
+	}
+	/*listing classic*/
+	.listing-meta .content-box .meta-content .listing-property-details>ul{
+		columns: 1;
+	}
+	.listing-detail .description-box .content-box .contact-form .form-footer .condition,
+	.listing-top-heading .sort-by,
+	.mb-xs-20 {
+		margin-bottom: 20px;
+	}
+	.mb-xs-40 {
+		margin-bottom: 40px;
+	}
+	.mb-xs-80 {
+		margin-bottom: 80px;
+	}
+}
+@media (max-width:380px){
+	.listing-top-heading .sort-by>span,
+	.copyright .payment-logo span{
+		display: none;
+	}
+	.listing-detail .description-box .content-box .listing-infor{
+		columns: 1;
+	}
+	/*coming soon*/
+	.coming-soon .content-wrapper .counter .counter-box .inner-box{
+		width: 60px;
+		height: 60px;
+	}
+}
